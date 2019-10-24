@@ -1,0 +1,12 @@
+<div class="example-container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div style="text-align: center;">
+      <mat-form-field>
+        <input matInput placeholder="Zip Code" formControlName='zipCode' required pattern="[0-9]{5}">
+      </mat-form-field>
+    </div>
+    <div style="text-align: center;">
+      <button mat-raised-button color="primary" [disabled]="!form.valid">Find</button>
+    </div>
+  </form>
+</div>

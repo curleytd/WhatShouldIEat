@@ -1,0 +1,11 @@
+type Restaurant @model {
+  id: String!
+  name: String!
+  rating: Float!
+  price: String!
+  category: String!
+  url: String!
+  imageUrl: String!
+  zip: Int!
+  address: String!
+}
