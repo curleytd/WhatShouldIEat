@@ -14,22 +14,8 @@ export class AppComponent implements OnInit {
   constructor(private apiService: APIService) {}
 
   async ngOnInit() {
-    this.apiService.ListRestaurants().then((evt) => {
-      this.restaurants = evt.items;
-    });
-  }
-
-  createRestaurant() {
-    this.apiService.CreateRestaurant({
-      id: 'Test',
-      name: 'Test',
-      rating: 4.5,
-      price: 'Test',
-      category: 'Test',
-      url: 'Test',
-      imageUrl: 'Test',
-      zip: 33634,
-      address: 'Test',
-    });
+    // this.apiService.ListRestaurants().then((evt) => {
+    //   this.restaurants = evt.items;
+    // });
   }
 }

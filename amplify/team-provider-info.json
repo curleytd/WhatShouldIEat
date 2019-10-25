@@ -9,6 +9,11 @@
             "UnauthRoleName": "whatshouldieat-dev-20191023095354-unauthRole",
             "StackName": "whatshouldieat-dev-20191023095354",
             "StackId": "arn:aws:cloudformation:us-east-1:462283825955:stack/whatshouldieat-dev-20191023095354/8da6e860-f59c-11e9-9c51-0e0ed2de56d2"
+        },
+        "categories": {
+            "auth": {
+                "cognito712e9aea": {}
+            }
         }
     }
 }

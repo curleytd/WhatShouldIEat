@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/yelp",
+            "lambdaFunction": "yelpapifunctions",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "yelpApi",
+    "apiName": "yelpApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "yelpapifunctions"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "whatshouldieat-dev-20191023095354-authRole",
+        "unAuthRoleName": "whatshouldieat-dev-20191023095354-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "yelpapifunctions",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
